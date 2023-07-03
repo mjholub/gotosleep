@@ -1,0 +1,1 @@
+Since running `swaylock && echo mem | sudo tee /sys/power/state might fail because the interactive shell becomes unavailable as a result of running swaylock`, I needed to write a small program to work around this by using polkit/elogind.
