@@ -3,6 +3,8 @@ module github.com/154pinkchairs/gotosleep
 go 1.20
 
 require (
+	github.com/avast/retry-go/v4 v4.3.4
+	github.com/godbus/dbus/v5 v5.1.0
 	github.com/samber/lo v1.38.1
 	github.com/snapcore/snapd v0.0.0-20230703120327-b0c8a48341dd
 	gopkg.in/yaml.v3 v3.0.1
