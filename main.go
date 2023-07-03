@@ -34,15 +34,6 @@ func main() {
 	}
 }
 
-func isRoot() bool {
-	currentUser, err := user.Current()
-	if err != nil {
-		fmt.Println("Failed to get current user:", err)
-		os.Exit(1)
-	}
-	return currentUser.Uid == "0"
-}
-
 func runCommand(name string, arg ...string) error {
 	cmd := exec.Command(name, arg...)
 	cmd.Stdout = os.Stdout
